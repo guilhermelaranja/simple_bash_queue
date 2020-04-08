@@ -87,4 +87,18 @@ my_first_queue
 ## Consuming queue example:
 
 ```
+guilherme.laranja@swordfishII:~/simple_bash_queue$ while read message; do echo "Hey, I'm consuming $message"; qremove my_first_queue "$message"; done <<< $(qlist my_first_queue)
+Hey, I'm consuming this is the message
+Removed "this is the message" from "my_first_queue"
+Hey, I'm consuming task_1
+Removed "task_1" from "my_first_queue"
+Hey, I'm consuming task_2
+Removed "task_2" from "my_first_queue"
+Hey, I'm consuming task_4
+Removed "task_4" from "my_first_queue"
+Hey, I'm consuming task_5
+Removed "task_5" from "my_first_queue"
+guilherme.laranja@swordfishII:~/simple_bash_queue$ qlist my_first_queue
 ```
+
+As you can see, handling whitespaces on the message (which is a filename) is a bit of a pain. It works, but I would avoid it.
