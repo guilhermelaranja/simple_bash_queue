@@ -10,21 +10,22 @@ I intended for the content of each message file to be its retry count, but its n
 
 # Quickstart
 
-- Setup the queue by running the script in your current context  
+- Setup  
+Setup the queue by running the script in your current context.
 This will add the `qadd`, `qlist` and `qremove` commands to your context.
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ . ./queue.sh
 ```
 
 - Adding a message to a queue  
-Here the first param is the name of the queue and second parameter is the message itself.  
-So you can already see this queue is not intended to be used for anything too complex, remember the message is a filename.
+...Here the first param is the name of the queue and second parameter is the message itself.  
+...So you can already see this queue is not intended to be used for anything too complex, remember the message is a filename.
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qadd "my_first_queue" "this is the message"
 Added "this is the message" to "my_first_queue"
 ```
 
-- Listing messages
+- Listing messages  
 Here the first param is the name of the queue.
 This is what you will use to get the queue messages. It lists the oldest message first.  
 ```
@@ -53,7 +54,7 @@ task_4
 task_5
 ```
 
-- Removing a message
+- Removing a message  
 Here the first param is the name of the queue and the second is the message to be removed
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qremove my_first_queue task_3
@@ -70,7 +71,7 @@ task_4
 task_5
 ```
 
- - Listing Queues
+ - Listing Queues  
 You can list all the queues by calling qlist without any params.
 The result is sorted by update time, oldest first.
 ```
@@ -78,7 +79,7 @@ guilherme.laranja@swordfishII:~/simple_bash_queue$ qlist
 my_first_queue
 ```
 
- - Creating Queues:
+ - Creating Queues  
 `qlist` and `qadd` will create the queue if it doesn't exist.
 
 
