@@ -10,7 +10,7 @@ I intended for the content of each message file to be its retry count, but its n
 
 # Quickstart
 
-- Setup the queue by running the script in your current context
+- Setup the queue by running the script in your current context  
 This will add the `qadd`, `qlist` and `qremove` commands to your context.
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ . ./queue.sh
