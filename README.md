@@ -11,6 +11,7 @@ I intended for the content of each message file to be its retry count, but its n
 # Quickstart
 
 - Setup the queue by running the script in your current context
+This will add the `qadd`, `qlist` and `qremove` commands to your context.
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ . ./queue.sh
 ```
@@ -52,7 +53,7 @@ task_4
 task_5
 ```
 
-- Removing a message.
+- Removing a message
 Here the first param is the name of the queue and the second is the message to be removed
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qremove my_first_queue task_3
@@ -69,7 +70,7 @@ task_4
 task_5
 ```
 
- - Listing Queues:
+ - Listing Queues
 You can list all the queues by calling qlist without any params.
 The result is sorted by update time, oldest first.
 ```
