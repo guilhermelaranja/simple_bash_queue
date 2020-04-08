@@ -7,7 +7,7 @@ qlist() {
 
 	mkdir -p "$BASEDIR/$QUEUE_NAME"
 
-	ls -1 "$BASEDIR/$QUEUE_NAME" | sort
+	ls -1tr "$BASEDIR/$QUEUE_NAME"
 }
 
 qadd() {
@@ -19,7 +19,7 @@ qadd() {
 
 	echo "$RETRY_COUNT" > "$BASEDIR/$QUEUE_NAME/$DATA"
 
-	echo "Added $DATA to $QUEUE_NAME"
+	echo "Added \"$DATA\" to \"$QUEUE_NAME\""
 }
 
 qremove() {
@@ -28,5 +28,5 @@ qremove() {
 
 	rm -f "$BASEDIR/$QUEUE_NAME/$DATA"
 
-	echo "Removed $DATA from $QUEUE_NAME"
+	echo "Removed \"$DATA\" from \"$QUEUE_NAME\""
 }
