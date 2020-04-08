@@ -20,6 +20,7 @@ guilherme.laranja@swordfishII:~/simple_bash_queue$ . ./queue.sh
 - Adding a message to a queue  
 Here the first param is the name of the queue and second parameter is the message itself.  
 So you can already see this queue is not intended to be used for anything too complex, remember the message is a filename.  
+The message is also its own id. You can't two of the same message.  
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qadd "my_first_queue" "this is the message"
 Added "this is the message" to "my_first_queue"
