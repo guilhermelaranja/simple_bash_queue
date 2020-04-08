@@ -30,7 +30,7 @@ Here the first param is the name of the queue.
 This is what you will use to get the queue messages. It lists the oldest message first.  
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qlist my_first_queue
-this is the message
+'this is the message'
 ```
 
 Lets add more messages so we can see what it looks like.  
@@ -46,7 +46,7 @@ Added task_5 to my_first_queue
 Now we list the messages.  
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qlist my_first_queue
-this is the message
+'this is the message'
 task_1
 task_2
 task_3
@@ -58,13 +58,13 @@ task_5
 Here the first param is the name of the queue and the second is the message to be removed.  
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qremove my_first_queue task_3
-Removed task_3 from my_first_queue
+Removed "task_3" from "my_first_queue"
 ```
 
 Listing after removal  
 ```
 guilherme.laranja@swordfishII:~/simple_bash_queue$ qlist my_first_queue
-this is the message
+'this is the message'
 task_1
 task_2
 task_4
